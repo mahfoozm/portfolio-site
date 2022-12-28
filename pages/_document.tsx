@@ -1,9 +1,6 @@
 /* eslint-disable @next/next/no-sync-scripts */
 import Document, { Html, Head, Main, NextScript } from "next/document";
 import { ServerStyleSheet } from "styled-components";
-import { GA_TRACKING_ID } from "../lib/gtag";
-
-const isProduction = process.env.NODE_ENV === "production";
 
 export default class MyDocument extends Document {
   static async getInitialProps(ctx: any) {
@@ -48,7 +45,7 @@ export default class MyDocument extends Document {
             sizes="192x192"
             href="/icons/android-chrome-192x192.png"
           />
-            <link
+          <link
             rel="icon"
             type="image/png"
             sizes="512x512"
@@ -95,27 +92,6 @@ export default class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap"
             rel="stylesheet"
           />
-          {isProduction && (
-            <>
-              <script
-                async
-                src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
-              />
-              <script
-                // eslint-disable-next-line react/no-danger
-                dangerouslySetInnerHTML={{
-                  __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${GA_TRACKING_ID}', {
-              page_path: window.location.pathname,
-            });
-          `,
-                }}
-              />
-            </>
-          )}
         </Head>
         <body>
           <Main />
