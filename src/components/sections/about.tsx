@@ -56,15 +56,6 @@ const About = () => {
             <br />
             <br />
           </p>
-          <Button
-              isLink={false}
-              className="hero-buttons"
-              buttonUrl="/assets/resume.pdf"
-              buttonText="Resume"
-              rel="noopener noreferrer"
-              target="_blank"
-              // download
-            />
         </motion.div>
         <motion.div
           ref={ref}

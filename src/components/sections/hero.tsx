@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { fadeUp } from "../../configs/animations";
+import { Button } from "../index";
 import {
   StyledHero,
   StyledHeroContainer,
@@ -45,6 +46,22 @@ const Hero = () => {
               {text}
             </motion.div>
           ))}
+          <motion.div className="buttons-container" variants={fadeUp}>
+            <Button
+              isLink={false}
+              className="hero-buttons"
+              buttonUrl="/assets/resume.pdf"
+              buttonText="resume"
+              rel="noopener noreferrer"
+              target="_blank"
+            />
+            <Button
+              isLink={false}
+              className="hero-buttons"
+              buttonUrl="#contact"
+              buttonText="contact"
+            />
+          </motion.div>
         </StyledHeroContent>
       </StyledHeroContainer>
     </StyledHero>
