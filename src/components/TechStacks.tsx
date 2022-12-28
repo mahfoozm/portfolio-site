@@ -17,7 +17,7 @@ const TechStacks = () => {
     >
       <motion.h1 variants={fadeUp}>languages, tools, and frameworks</motion.h1>
       <motion.p variants={fadeUp}>
-        programming languages, tools and frameworks that I&apos;m familiar with
+        some of the languages, tools, and frameworks that I&apos;m familiar with
       </motion.p>
       <StyledTech>
         <motion.ul>

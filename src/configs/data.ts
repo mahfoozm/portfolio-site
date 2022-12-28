@@ -28,14 +28,26 @@ import { BsArrowRepeat } from "react-icons/bs";
 import { IoLogoLinkedin } from "react-icons/io";
 import { GrGraphQl } from "react-icons/gr";
 import {
+  SiJava,
+  SiSwift,
+  SiPython,
+  SiC,
+  SiCplusplus,
+  SiJavascript,
   SiTypescript,
   SiTailwindcss,
   SiFirebase,
-  // SiJavascript,
+  SiFlask,
+  SiVite,
+  SiJest,
+  SiSelenium,
+  SiMysql,
+  SiR,
   SiMongodb,
   SiStyledcomponents,
   SiRedux,
   SiPostgresql,
+  SiNextdotjs,
 } from "react-icons/si";
 import {
   FaReact,
@@ -76,20 +88,55 @@ export const skills: ISkills[] = [
   //   name: 'Sass',
   //   Icon: IoLogoSass,
   // },
-  // {
-  //   id: 'javascript',
-  //   name: 'Javascript',
-  //   Icon: SiJavascript,
-  // },
+  {
+    id: "java",
+    name: "Java",
+    Icon: SiJava,
+  },
+  {
+    id: "swift",
+    name: "Swift",
+    Icon: SiSwift,
+  },
+  {
+    id: "python",
+    name: "Python",
+    Icon: SiPython,
+  },
+  {
+    id: "c",
+    name: "C",
+    Icon: SiC,
+  },
+  {
+    id: "cpp",
+    name: "C++",
+    Icon: SiCplusplus,
+  },
+  {
+    id: "javascript",
+    name: "Javascript",
+    Icon: SiJavascript,
+  },
   {
     id: "typescript",
     name: "Typescript",
     Icon: SiTypescript,
   },
   {
-    id: "react",
+    id: "nodejs",
+    name: "Node.js",
+    Icon: FaNodeJs,
+  },
+  {
+    id: "reactjs",
     name: "React.js",
     Icon: FaReact,
+  },
+  {
+    id: "nextjs",
+    name: "Next.js",
+    Icon: SiNextdotjs,
   },
   {
     id: "react-native",
@@ -97,14 +144,19 @@ export const skills: ISkills[] = [
     Icon: FaReact,
   },
   {
-    id: "tailwind",
+    id: "selenium",
+    name: "Selenium",
+    Icon: SiSelenium,
+  },
+  {
+    id: "tailwindcss",
     name: "Tailwind CSS",
     Icon: SiTailwindcss,
   },
   {
-    id: "node",
-    name: "Node.js",
-    Icon: FaNodeJs,
+    id: "postgresql",
+    name: "PostgreSQL",
+    Icon: SiPostgresql,
   },
   {
     id: "mongodb",
@@ -112,24 +164,14 @@ export const skills: ISkills[] = [
     Icon: SiMongodb,
   },
   {
-    id: "postgre",
-    name: "PostgreSQL",
-    Icon: SiPostgresql,
-  },
-  {
     id: "graphql",
     name: "GraphQL",
     Icon: GrGraphQl,
   },
   {
-    id: "restapi",
-    name: "REST API",
-    Icon: AiFillApi,
-  },
-  {
-    id: "firebase",
-    name: "Firebase",
-    Icon: SiFirebase,
+    id: "flask",
+    name: "Flask",
+    Icon: SiFlask,
   },
   {
     id: "docker",
@@ -137,9 +179,14 @@ export const skills: ISkills[] = [
     Icon: FaDocker,
   },
   {
-    id: "github",
-    name: "Github",
-    Icon: AiFillGithub,
+    id: "R",
+    name: "R",
+    Icon: SiR,
+  },
+  {
+    id: "firebase",
+    name: "Firebase",
+    Icon: SiFirebase,
   },
   {
     id: "git",
