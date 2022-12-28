@@ -8,7 +8,7 @@ import {
 } from "../../styles/componentStyles";
 
 const Hero = () => {
-  const one = <h1>hi, I&apos;m</h1>;
+  const one = <h1>hi, my name is</h1>;
   const two = <h2>Mohammad Mahfooz.</h2>;
   const three = (
     <h3>
