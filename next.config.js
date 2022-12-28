@@ -1,4 +1,10 @@
+const isProd = process.env.NODE_ENV === "production";
+
 module.exports = {
+  assetPrefix: isProd ? "/your-github-repo-name/" : "",
+  images: {
+    unoptimized: true,
+  },
   reactStrictMode: true,
 };
 
@@ -18,25 +24,6 @@ const nextConfig = {
   swcMinify: true,
   images: {
     domains: ["mohammadmahfooz.engineer", "raw.githubusercontent.com"],
-  },
-  async redirects() {
-    return [
-      {
-        source: "/instagram",
-        destination: "https://www.instagram.com/mxhammadm/",
-        permanent: false,
-      },
-      {
-        source: "/linkedin",
-        destination: "https://www.linkedin.com/in/mohammadmahfooz/",
-        permanent: false,
-      },
-      {
-        source: "/github",
-        destination: "https://github.com/mahfoozm",
-        permanent: false,
-      },
-    ];
   },
 };
 

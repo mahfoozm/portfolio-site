@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import {
   INavLinks,
   IProjects,
@@ -152,8 +154,7 @@ export const skills: ISkills[] = [
 ];
 
 export const customSeo: CustomSeoProps = {
-  description:
-    "Hi! I'm Mohammad Mahfooz..",
+  description: "Hi! I'm Mohammad Mahfooz..",
   title: "mohammad mahfooz",
   image: "/assets/projects/project1.png",
   url: "https://mohammadmahfooz.engineer/",
@@ -162,14 +163,12 @@ export const customSeo: CustomSeoProps = {
 
 export const nextSeo = {
   title: "mohammad mahfooz",
-  description:
-    "Hi! I am Mohammad Mahfooz.",
+  description: "Hi! I am Mohammad Mahfooz.",
   canonical: "https://mohammadmahfooz.engineer/",
   openGraph: {
     url: "https://mohammadmahfooz.engineer/",
     title: "Mohammad Mahfooz",
-    description:
-      "Hi! I'm Mohammad Mahfooz.",
+    description: "Hi! I'm Mohammad Mahfooz.",
     images: [
       {
         url: "/assets/projects/project1.png",
@@ -190,12 +189,7 @@ export const projects: IProjects[] = [
     image: "/assets/projects/project1.png",
     alt: "Project 1",
     info: "Project 1",
-    techs: [
-      "Typescript",
-      "React.js",
-      "Next.js",
-      "Tailwind CSS",
-    ],
+    techs: ["Typescript", "React.js", "Next.js", "Tailwind CSS"],
     links: {
       github: "https://github.com/mahfoozm",
     },
@@ -205,12 +199,7 @@ export const projects: IProjects[] = [
     image: "/assets/projects/project2.png",
     alt: "Project 2",
     info: "Project 2",
-    techs: [
-      "Typescript",
-      "React.js",
-      "Next.js",
-      "Tailwind CSS",
-    ],
+    techs: ["Typescript", "React.js", "Next.js", "Tailwind CSS"],
     links: {
       github: "https://github.com/mahfoozm",
     },
@@ -220,12 +209,7 @@ export const projects: IProjects[] = [
     image: "/assets/projects/project3.png",
     alt: "Project 3",
     info: "Project 3",
-    techs: [
-      "Typescript",
-      "React.js",
-      "Next.js",
-      "Tailwind CSS",
-    ],
+    techs: ["Typescript", "React.js", "Next.js", "Tailwind CSS"],
     links: {
       github: "https://github.com/mahfoozm",
     },
@@ -235,12 +219,7 @@ export const projects: IProjects[] = [
     image: "/assets/projects/project4.png",
     alt: "Project 4",
     info: "Project 4",
-    techs: [
-      "Typescript",
-      "React.js",
-      "Next.js",
-      "Tailwind CSS",
-    ],
+    techs: ["Typescript", "React.js", "Next.js", "Tailwind CSS"],
     links: {
       github: "https://github.com/mahfoozm",
     },

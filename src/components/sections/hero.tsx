@@ -1,7 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { fadeUp } from "../../configs/animations";
-import { Button } from "../index";
 import {
   StyledHero,
   StyledHeroContainer,
@@ -9,9 +8,14 @@ import {
 } from "../../styles/componentStyles";
 
 const Hero = () => {
-  const one = <h1>hi, I'm</h1>;
+  const one = <h1>hi, I&apos;m</h1>;
   const two = <h2>Mohammad Mahfooz.</h2>;
-  const three = <h3>i'm a second year Software Engineering student studying at York University.</h3>;
+  const three = (
+    <h3>
+      i&apos;m a second year Software Engineering student studying at York
+      University.
+    </h3>
+  );
   const heroTexts = [one, two, three];
 
   const heroContainerVariants = {

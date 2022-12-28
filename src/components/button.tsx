@@ -1,6 +1,6 @@
-import React from 'react';
-import Link from 'next/link';
-import { StyledButton } from '../styles/componentStyles';
+import React from "react";
+import Link from "next/link";
+import { StyledButton } from "../styles/componentStyles";
 
 interface IButton {
   buttonText: string;
@@ -24,9 +24,9 @@ const Button: React.FC<IButton> = ({
   return (
     <>
       {isLink ? (
-        <Link href={buttonUrl} passHref>
+        <Link href={buttonUrl} passHref legacyBehavior>
           <StyledButton className={className}>
-            <div className='line'></div>
+            <div className="line"></div>
             <p>{buttonText}</p>
           </StyledButton>
         </Link>
@@ -38,7 +38,7 @@ const Button: React.FC<IButton> = ({
           className={className}
           download={download}
         >
-          <div className='line'></div>
+          <div className="line"></div>
           <p>{buttonText}</p>
         </StyledButton>
       )}

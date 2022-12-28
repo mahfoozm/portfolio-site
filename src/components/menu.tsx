@@ -46,22 +46,18 @@ const Menu: React.FC<IMenuProps> = ({ variants, isHome }) => {
         <ul>
           <ToggleTheme className="toggle-icon" />
           {/* @ts-ignore */}
-          {navLinks.home.map(
-            ({ name, url }: NavLinksProps) => {
-              return (
-                <li
-                  key={name}
-                  onClick={() => {
-                    setMenuOpen(false);
-                  }}
-                >
-                  <Link href={url}>
-                    <a>{name}</a>
-                  </Link>
-                </li>
-              );
-            }
-          )}
+          {navLinks.home.map(({ name, url }: NavLinksProps) => {
+            return (
+              <li
+                key={name}
+                onClick={() => {
+                  setMenuOpen(false);
+                }}
+              >
+                <Link href={url}>{name}</Link>
+              </li>
+            );
+          })}
         </ul>
       </div>
     </StyledMenu>

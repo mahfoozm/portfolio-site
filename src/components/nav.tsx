@@ -59,13 +59,7 @@ const Nav: React.FC<INavProps> = ({ isHome }) => {
   }, []);
 
   const Logo = () =>
-    isHome ? (
-      <a href={hostURL}></a>
-    ) : (
-      <Link href="/" passHref>
-        <a></a>
-      </Link>
-    );
+    isHome ? <a href={hostURL}></a> : <Link href="/" passHref></Link>;
 
   const [innerText, setInnerText] = useState("");
 
@@ -92,31 +86,26 @@ const Nav: React.FC<INavProps> = ({ isHome }) => {
         <StyledLinks>
           <ul>
             {/* @ts-ignore */}
-            {navLinks.home.map(
-              ({ url, name }: NavLinksProps, i: number) => {
-                return (
-                  <motion.li
-                    onClick={activeLinkHandler}
-                    variants={navItemVariants}
-                    key={i}
+            {navLinks.home.map(({ url, name }: NavLinksProps, i: number) => {
+              return (
+                <motion.li
+                  onClick={activeLinkHandler}
+                  variants={navItemVariants}
+                  key={i}
+                >
+                  <Link
+                    href={url}
+                    passHref
+                    className={`link ${
+                      name === innerText ? "active-link" : ""
+                    }`}
                   >
-                    <Link href={url} passHref>
-                      <a
-                        className={`link ${
-                          name === innerText ? "active-link" : ""
-                        }`}
-                      >
-                        {name}
-                      </a>
-                    </Link>
-                  </motion.li>
-                );
-              }
-            )}
-            <motion.li
-              onClick={activeLinkHandler}
-              variants={navItemVariants}
-            >
+                    {name}
+                  </Link>
+                </motion.li>
+              );
+            })}
+            <motion.li onClick={activeLinkHandler} variants={navItemVariants}>
               <ToggleTheme />
             </motion.li>
           </ul>
