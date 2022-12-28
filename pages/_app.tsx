@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import { useRouter } from "next/router";
 import { GlobalStyles } from "../src/styles/GlobalStyles";
 import { ThemeModeProvider } from "../src/contexts/ThemeModeContext";
+import * as gtag from "../lib/gtag";
 
 const isProduction = process.env.NODE_ENV === "production";
 
