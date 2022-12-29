@@ -70,7 +70,7 @@ export const GlobalStyles = createGlobalStyle<ThemeProps>`
     margin-bottom: 40px;
     width: 100%;
     color: ${({ theme }) => theme.textMain};
-    font-weight: 700;
+    font-weight: 500;
     font-size: clamp(35px, 6vw, var(--fz-heading));
 
     @media only screen and (max-width: 600px) {
@@ -83,7 +83,7 @@ export const GlobalStyles = createGlobalStyle<ThemeProps>`
       content: '.';
       margin-left: 5px;
       color: ${({ theme }) => theme.accentMain};
-      font-size: 65px;
+      font-size: 60px;
       font-weight: 700;
     }
   }

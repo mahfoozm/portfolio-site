@@ -1,4 +1,4 @@
-import { css } from 'styled-components';
+import { css } from "styled-components";
 
 const Variables = css`
   :root {
@@ -6,8 +6,8 @@ const Variables = css`
     --navy-blue: #102039;
     --white: #f1f8f7;
 
-    --font-main: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-      Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+    --font-main: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Poppins, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
       sans-serif;
 
     // Font size

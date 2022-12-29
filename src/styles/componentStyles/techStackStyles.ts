@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 export const StyledTechStacks = styled(motion.div)`
   margin: 70px auto 0 auto;
   text-align: center;
+  margin-top: 120px;
 
   h1 {
     font-size: 30px;

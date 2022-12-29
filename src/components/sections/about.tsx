@@ -40,21 +40,27 @@ const About = () => {
           <Image
             className="about-image"
             // src={zoms}
-            src="/assets/me.jpg"
+            src="/assets/aboutphoto.jpg"
             alt="Photo of Me"
             width={300}
             height={422}
             placeholder="blur"
-            blurDataURL="/assets/me.jpg"
+            blurDataURL="/assets/aboutphoto.jpg"
           />
           <div className="grayscale" />
         </motion.div>
         <motion.div variants={fadeLeft} className="about-text">
           <h3>Mohammad Mahfooz</h3>
           <p>
-            write a bio or something here idk if im even keeping this <br />
-            <br />
-            <br />
+            <br />i recently wrapped up my first internship as a Software
+            Engineer at RydUp (a transportation startup at York University). the
+            most valuable skill I gained from this internship was (easily) the
+            ability to work on a project as a team, something I wasn&apos;t
+            accustomed to before. <br /> <br /> to continue expanding my
+            skillset, I am currently learning more about machine learning and
+            data science. i am also working on improving my existing skills by
+            completing personal projects (like this website!). i&apos;m actively
+            seeking internships for summer 2023.
           </p>
         </motion.div>
         <motion.div
@@ -66,12 +72,12 @@ const About = () => {
         >
           <Image
             className="about-image"
-            src="/assets/me-square.jpg"
+            src="/assets/aboutphoto.jpg"
             width={300}
             height={300}
             alt="Photo of Me"
             placeholder="blur"
-            blurDataURL="/assets/me-square.jpg"
+            blurDataURL="/assets/aboutphoto.jpg"
           />
           <div className="grayscale" />
         </motion.div>

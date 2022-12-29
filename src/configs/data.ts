@@ -9,7 +9,6 @@ import {
 } from "./types";
 import {
   AiOutlineInstagram,
-  // AiFillHtml5,
   AiFillGithub,
   AiFillApi,
   AiOutlineTeam,
@@ -24,7 +23,6 @@ import {
 } from "react-icons/fi";
 import { GiPlayerTime, GiThink } from "react-icons/gi";
 import { BsArrowRepeat } from "react-icons/bs";
-// import { IoLogoSass, IoLogoLinkedin } from 'react-icons/io';
 import { IoLogoLinkedin } from "react-icons/io";
 import { GrGraphQl } from "react-icons/gr";
 import {
@@ -78,16 +76,6 @@ export const navLinks: INavLinks = {
 };
 
 export const skills: ISkills[] = [
-  // {
-  //   id: 'html',
-  //   name: 'HTML5',
-  //   Icon: AiFillHtml5,
-  // },
-  // {
-  //   id: 'sass',
-  //   name: 'Sass',
-  //   Icon: IoLogoSass,
-  // },
   {
     id: "java",
     name: "Java",
@@ -201,24 +189,27 @@ export const skills: ISkills[] = [
 ];
 
 export const customSeo: CustomSeoProps = {
-  description: "Hi! I'm Mohammad Mahfooz..",
+  description:
+    "hi! my name is mohammad mahfooz. i'm a second year Software Engineering student studying at York University. this is my portfolio, which showcases some of my skills and projects.",
   title: "mohammad mahfooz",
-  image: "/assets/projects/project1.png",
+  image: "/assets/projects/aboutphoto.jpg",
   url: "https://mohammadmahfooz.engineer/",
   twitterUsername: "@mxhammadm",
 };
 
 export const nextSeo = {
   title: "mohammad mahfooz",
-  description: "Hi! I am Mohammad Mahfooz.",
+  description:
+    "hi! my name is mohammad mahfooz. i'm a second year Software Engineering student studying at York University. this is my portfolio, which showcases some of my skills and projects.",
   canonical: "https://mohammadmahfooz.engineer/",
   openGraph: {
     url: "https://mohammadmahfooz.engineer/",
     title: "Mohammad Mahfooz",
-    description: "Hi! I'm Mohammad Mahfooz.",
+    description:
+      "hi! my name is mohammad mahfooz. i'm a second year Software Engineering student studying at York University. this is my portfolio, which showcases some of my skills and projects.",
     images: [
       {
-        url: "/assets/projects/project1.png",
+        url: "/assets/projects/aboutphoto.jpg",
       },
     ],
     site_name: "mohammad mahfooz",
@@ -232,43 +223,49 @@ export const nextSeo = {
 
 export const projects: IProjects[] = [
   {
-    name: "Project 1",
-    image: "/assets/projects/project1.png",
-    alt: "Project 1",
-    info: "Project 1",
-    techs: ["Typescript", "React.js", "Next.js", "Tailwind CSS"],
+    name: "Air Quality Monitor",
+    image: "/assets/projects/airqualitymonitor.png",
+    alt: "Air Quality Monitor",
+    info: "a CO2 monitor/weather station utilizing Java and an Arduino.",
+    techs: ["Java", "C++", "Firmata", "JavaFX", "jSerialComm"],
     links: {
-      github: "https://github.com/mahfoozm",
+      github: "https://github.com/mahfoozm/airqualitymonitor",
     },
   },
   {
-    name: "Project 2",
-    image: "/assets/projects/project2.png",
-    alt: "Project 2",
-    info: "Project 2",
-    techs: ["Typescript", "React.js", "Next.js", "Tailwind CSS"],
+    name: "Plant Watering System",
+    image: "/assets/projects/autowater.png",
+    alt: "Plant Watering System",
+    info: "an automated plant watering system utilizing Java and an Arduino.",
+    techs: ["Java", "Firmata", "JUnit"],
     links: {
-      github: "https://github.com/mahfoozm",
+      github: "https://github.com/mahfoozm/plantwateringsystem",
     },
   },
   {
-    name: "Project 3",
-    image: "/assets/projects/project3.png",
-    alt: "Project 3",
-    info: "Project 3",
-    techs: ["Typescript", "React.js", "Next.js", "Tailwind CSS"],
+    name: "Portfolio Site",
+    image: "/assets/projects/sitewelcome.png",
+    alt: "Portfolio Site",
+    info: "my portfolio site (which you're currently on!). designed to showcase my skills and projects.",
+    techs: [
+      "TypeScript",
+      "React.js",
+      "Next.js",
+      "Styled Components",
+      "Node.js",
+    ],
     links: {
-      github: "https://github.com/mahfoozm",
+      github: "https://github.com/mahfoozm/portfolio-site",
     },
   },
   {
-    name: "Project 4",
-    image: "/assets/projects/project4.png",
-    alt: "Project 4",
-    info: "Project 4",
-    techs: ["Typescript", "React.js", "Next.js", "Tailwind CSS"],
+    name: "YorkU RMP",
+    image: "/assets/projects/stanislawgoat.png",
+    alt: "YorkU RMP",
+    info: "a chrome extension that displays professor ratings from RateMyProfessors.com on the YorkU course search page.",
+    techs: ["JavaScript", "TypeScript", "Node.js"],
     links: {
-      github: "https://github.com/mahfoozm",
+      github: "https://github.com/mahfoozm/YorkURMP",
     },
   },
 ];

@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const StyledFooter = styled.footer`
   height: var(--nav-height);
@@ -35,7 +35,7 @@ export const StyledSocialLinks = styled.div`
   }
 
   .icon {
-    width: 22px;
-    height: 22px;
+    width: 40px;
+    height: 40px;
   }
 `;

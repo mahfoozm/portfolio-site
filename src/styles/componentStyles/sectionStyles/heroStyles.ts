@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { motion } from 'framer-motion';
+import styled from "styled-components";
+import { motion } from "framer-motion";
 
 export const StyledHero = styled.section`
   align-items: center;
@@ -96,77 +96,6 @@ export const StyledHeroContent = styled(motion.div)`
 
     :hover {
       transform: scale(2);
-    }
-  }
-
-  .floating-icons {
-    position: absolute;
-    animation-name: floating;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 100%;
-    width: 80px;
-    height: 80px;
-
-    :hover ::after {
-      transform: scale(1.4);
-    }
-
-    ::after {
-      content: '';
-      position: absolute;
-      border-radius: 100px;
-      background-color: ${({ theme }) => theme.floatBG};
-      width: 80px;
-      height: 80px;
-      transition: var(--transition2);
-      z-index: -1;
-    }
-
-    @media only screen and (max-width: 1000px) {
-      display: none;
-    }
-  }
-
-  .icons {
-    z-index: 33;
-    width: 40px;
-    height: 40px;
-    color: ${({ theme }) => theme.textMain};
-  }
-
-  .linkedin-loc {
-    left: -140px;
-    bottom: -10px;
-  }
-
-  .github-loc {
-    right: 40px;
-    bottom: 100px;
-
-    @media only screen and (max-width: 1100px) {
-      right: -30px;
-    }
-  }
-
-  .instagram-loc {
-    right: 35%;
-    top: -50px;
-  }
-
-  @keyframes floating {
-    from {
-      transform: translate(0, 0px);
-    }
-    65% {
-      transform: translate(0, 15px);
-    }
-    to {
-      transform: translate(0, -0px);
     }
   }
 `;

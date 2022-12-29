@@ -17,10 +17,11 @@ const Contact = () => {
       id="contact"
     >
       <motion.h2 variants={fadeUp} className="section-heading">
-        contact me
+        contact
       </motion.h2>
       <motion.p variants={fadeUp} className="contact-p">
-        write some ENTICING text here 
+        currently looking for summer 2023 internships. please feel free to
+        contact me.
       </motion.p>
       <motion.div variants={fadeUp}>
         <Button

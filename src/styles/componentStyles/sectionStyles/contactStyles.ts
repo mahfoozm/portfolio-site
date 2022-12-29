@@ -1,11 +1,11 @@
-import styled from 'styled-components';
-import { motion } from 'framer-motion';
+import styled from "styled-components";
+import { motion } from "framer-motion";
 
 const StyledContact = styled(motion.section)`
   height: auto;
   padding: 50px 300px;
   text-align: center;
-  margin-bottom: 200px;
+  margin-bottom: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;

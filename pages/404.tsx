@@ -1,7 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import styled from 'styled-components';
-import { Nav, Footer, Button } from '../src/components';
-import { useRouter } from 'next/router';
+import styled from "styled-components";
+import { Nav, Footer, Button } from "../src/components";
 
 const StyledNotFound = styled.section`
   max-height: 100vh;
@@ -25,7 +23,7 @@ const StyledNotFound = styled.section`
     h2 {
       font-size: clamp(25px, 5vw, 40px);
       font-weight: var(--font-regular);
-      margin-bottom: 20px;
+      margin-bottom: 30px;
     }
 
     .redirect-message {
@@ -39,30 +37,20 @@ interface INotFoundProps {
 }
 
 const NotFound: React.FC<INotFoundProps> = ({ isHome }) => {
-  const router = useRouter();
-  const [redirectDelay, setRedirectDelay] = useState(10);
-  useEffect(() => {
-    setTimeout(() => {
-      if (redirectDelay > 0) {
-        setRedirectDelay(redirectDelay - 1);
-      }
-    }, 1000);
-    if (redirectDelay === 0) router.push('/');
-  }, [redirectDelay, router]);
   return (
     <StyledNotFound>
       <Nav isHome={isHome} />
-      <div className='notFoundContent'>
-        <h1 className='section-heading'>404</h1>
+      <div className="notFoundContent">
+        <h1 className="section-heading">404</h1>
         <h2>oopsies.</h2>
-        <p className='redirect-message'>
-          you will be automatically redirected to home page in {redirectDelay}s.
+        <p className="redirect-message">
+          go home. there&apos;s nothing here :(
         </p>
         <Button
           isLink={true}
-          buttonUrl='/'
-          buttonText='return home'
-          className='notFoundButton'
+          buttonUrl="/"
+          buttonText="return home"
+          className="notFoundButton"
         />
       </div>
       <Footer />
