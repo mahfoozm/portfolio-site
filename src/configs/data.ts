@@ -118,7 +118,7 @@ export const skills: ISkills[] = [
   },
   {
     id: "reactjs",
-    name: "React.js",
+    name: "React",
     Icon: FaReact,
   },
   {
@@ -247,13 +247,7 @@ export const projects: IProjects[] = [
     image: "/assets/projects/sitewelcome.png",
     alt: "Portfolio Site",
     info: "my portfolio site (which you're currently on!). designed to showcase my skills and projects.",
-    techs: [
-      "TypeScript",
-      "React.js",
-      "Next.js",
-      "Styled Components",
-      "Node.js",
-    ],
+    techs: ["TypeScript", "React", "Next.js", "Styled Components", "Node.js"],
     links: {
       github: "https://github.com/mahfoozm/portfolio-site",
     },
