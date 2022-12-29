@@ -72,12 +72,12 @@ const About = () => {
         >
           <Image
             className="about-image"
-            src="/assets/aboutphoto.jpg"
+            src="/assets/aboutphoto-square.jpg"
             width={300}
             height={300}
             alt="Photo of Me"
             placeholder="blur"
-            blurDataURL="/assets/aboutphoto.jpg"
+            blurDataURL="/assets/aboutphoto-square.jpg"
           />
           <div className="grayscale" />
         </motion.div>
