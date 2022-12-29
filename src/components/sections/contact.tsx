@@ -20,8 +20,8 @@ const Contact = () => {
         contact
       </motion.h2>
       <motion.p variants={fadeUp} className="contact-p">
-        currently looking for summer 2023 internships. please feel free to
-        contact me.
+        actively seeking internships with a summer 2023 start. please feel free
+        to contact me.
       </motion.p>
       <motion.div variants={fadeUp}>
         <Button
