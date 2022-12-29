@@ -53,9 +53,9 @@ const About = () => {
           <h3>Mohammad Mahfooz</h3>
           <p>
             <br />i recently wrapped up my first internship as a Software
-            Engineer at RydUp (a transportation startup at York University). the
-            most valuable skill I gained from this internship was (easily) the
-            ability to work on a project as a team, something I wasn&apos;t
+            Engineer at YURide (a transportation startup at York University).
+            the most valuable skill I gained from this internship was (easily)
+            the ability to work on a project as a team, something I wasn&apos;t
             accustomed to before. <br /> <br /> to continue expanding my
             skillset, I am currently learning more about machine learning and
             data science. i am also working on improving my existing skills by
