@@ -257,7 +257,7 @@ export const projects: IProjects[] = [
     image: "/assets/projects/stanislawgoat.png",
     alt: "YorkU RMP",
     info: "a chrome extension that displays professor ratings from RateMyProfessors.com on the YorkU course search page.",
-    techs: ["JavaScript", "TypeScript", "Node.js"],
+    techs: ["JavaScript", "GraphQL", "Node.js"],
     links: {
       github: "https://github.com/mahfoozm/YorkURMP",
     },
