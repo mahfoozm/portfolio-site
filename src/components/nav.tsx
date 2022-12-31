@@ -3,7 +3,6 @@ import Link from "next/link";
 import { motion, Variants } from "framer-motion";
 
 import ToggleTheme from "./ToggleTheme";
-import Menu from "./menu";
 import { navLinks } from "../configs/data";
 import { StyledNav, StyledLinks } from "../styles/componentStyles";
 import { NavLinksProps } from "@/configs/types";
@@ -110,7 +109,6 @@ const Nav: React.FC<INavProps> = ({ isHome }) => {
             </motion.li>
           </ul>
         </StyledLinks>
-        <Menu variants={navItemVariants} isHome={isHome} />
       </motion.nav>
     </StyledNav>
   );
