@@ -24,7 +24,7 @@ import {
 import { GiPlayerTime, GiThink } from "react-icons/gi";
 import { BsArrowRepeat } from "react-icons/bs";
 import { IoLogoLinkedin } from "react-icons/io";
-import { GrGraphQl } from "react-icons/gr";
+import { GrGraphQl, GrMysql } from "react-icons/gr";
 import {
   SiJava,
   SiSwift,
@@ -44,7 +44,6 @@ import {
   SiMongodb,
   SiStyledcomponents,
   SiRedux,
-  SiPostgresql,
   SiNextdotjs,
 } from "react-icons/si";
 import {
@@ -56,6 +55,7 @@ import {
   FaHandHoldingHeart,
   FaPuzzlePiece,
   FaDocker,
+  FaHtml5,
 } from "react-icons/fa";
 
 export const navLinks: INavLinks = {
@@ -142,9 +142,9 @@ export const skills: ISkills[] = [
     Icon: SiTailwindcss,
   },
   {
-    id: "postgresql",
-    name: "PostgreSQL",
-    Icon: SiPostgresql,
+    id: "html5",
+    name: "HTML5",
+    Icon: FaHtml5,
   },
   {
     id: "mongodb",
@@ -152,19 +152,14 @@ export const skills: ISkills[] = [
     Icon: SiMongodb,
   },
   {
+    id: "mysql",
+    name: "MySQL",
+    Icon: GrMysql,
+  },
+  {
     id: "graphql",
     name: "GraphQL",
     Icon: GrGraphQl,
-  },
-  {
-    id: "flask",
-    name: "Flask",
-    Icon: SiFlask,
-  },
-  {
-    id: "docker",
-    name: "Docker",
-    Icon: FaDocker,
   },
   {
     id: "R",
@@ -172,14 +167,24 @@ export const skills: ISkills[] = [
     Icon: SiR,
   },
   {
-    id: "firebase",
-    name: "Firebase",
-    Icon: SiFirebase,
-  },
-  {
     id: "git",
     name: "Git",
     Icon: FaGitAlt,
+  },
+  {
+    id: "docker",
+    name: "Docker",
+    Icon: FaDocker,
+  },
+  {
+    id: "flask",
+    name: "Flask",
+    Icon: SiFlask,
+  },
+  {
+    id: "firebase",
+    name: "Firebase",
+    Icon: SiFirebase,
   },
   {
     id: "figma",
@@ -257,7 +262,7 @@ export const projects: IProjects[] = [
     image: "/assets/projects/stanislawgoat.png",
     alt: "YorkU RMP",
     info: "a chrome extension that displays professor ratings from RateMyProfessors.com on the YorkU course search page.",
-    techs: ["JavaScript", "GraphQL", "Node.js"],
+    techs: ["JavaScript", "HTML", "GraphQL", "Node.js"],
     links: {
       github: "https://github.com/mahfoozm/YorkURMP",
     },
