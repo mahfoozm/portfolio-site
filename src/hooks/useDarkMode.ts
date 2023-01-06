@@ -1,24 +1,24 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect } from 'react';
 
-export type ThemeMode = "light" | "dark";
+export type ThemeMode = 'light' | 'dark';
 
 export const useDarkMode = () => {
-  const [theme, setTheme] = useState<ThemeMode>("dark");
+  const [theme, setTheme] = useState<ThemeMode>('dark');
 
   const setMode = (mode: ThemeMode) => {
-    window.localStorage.setItem("theme", mode);
+    window.localStorage.setItem('theme', mode);
     setTheme(mode);
   };
 
   const toggleTheme = (): void => {
-    theme === "light" ? setMode("dark") : setMode("light");
+    theme === 'light' ? setMode('dark') : setMode('light');
   };
 
   useEffect(() => {
     const localTheme: ThemeMode = window.localStorage.getItem(
-      "theme"
+      'theme'
     ) as ThemeMode;
-    localTheme ? setTheme(localTheme) : setTheme("dark");
+    localTheme ? setTheme(localTheme) : setTheme('dark');
   }, []);
 
   return [theme, toggleTheme];
