@@ -1,16 +1,16 @@
-import React from "react";
-import Image from "next/image";
-import { motion } from "framer-motion";
-import useScrollReveal from "../../hooks/useScrollReveal";
+import React from 'react';
+import Image from 'next/image';
+import { motion } from 'framer-motion';
+import useScrollReveal from '../../hooks/useScrollReveal';
 
 import {
   parentVar,
   fadeUp,
   fadeLeft,
-  fadeUpDelay,
-} from "../../configs/animations";
-import TechStacks from "../TechStacks";
-import { StyledAbout, StyledAboutContent } from "../../styles/componentStyles";
+  fadeUpDelay
+} from '../../configs/animations';
+import TechStacks from '../TechStacks';
+import { StyledAbout, StyledAboutContent } from '../../styles/componentStyles';
 
 const About = () => {
   const [ref, controls] = useScrollReveal(-250);
@@ -57,10 +57,10 @@ const About = () => {
             the most valuable skill I gained from this internship was (easily)
             the ability to work on a project as a team, something I wasn&apos;t
             accustomed to before. <br /> <br /> to continue expanding my
-            skillset, I am currently learning more about machine learning and
-            data science. i am also working on improving my existing skills by
-            completing personal projects (like this website!). i&apos;m actively
-            seeking internships for summer 2023.
+            skillset, I am currently learning more about systems programming and
+            the linux kernel. i am also working on improving my existing skills
+            by completing personal projects. i&apos;m actively seeking
+            internships for summer 2023.
           </p>
         </motion.div>
         <motion.div
