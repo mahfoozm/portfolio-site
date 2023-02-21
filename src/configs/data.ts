@@ -45,7 +45,8 @@ import {
   SiMongodb,
   SiStyledcomponents,
   SiRedux,
-  SiNextdotjs
+  SiNextdotjs,
+  SiGoland
 } from 'react-icons/si';
 import {
   FaReact,
@@ -100,7 +101,7 @@ export const skills: ISkills[] = [
   {
     id: 'go',
     name: 'Go',
-    Icon: GrGolang
+    Icon: SiGoland
   },
   {
     id: 'python',
