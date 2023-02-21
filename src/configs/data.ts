@@ -24,11 +24,12 @@ import {
 import { GiPlayerTime, GiThink } from 'react-icons/gi';
 import { BsArrowRepeat } from 'react-icons/bs';
 import { IoLogoLinkedin } from 'react-icons/io';
-import { GrGraphQl, GrMysql } from 'react-icons/gr';
+import { GrGolang, GrGraphQl, GrMysql } from 'react-icons/gr';
 import {
   SiJava,
   SiSwift,
   SiPython,
+  SiRust,
   SiC,
   SiCplusplus,
   SiJavascript,
@@ -77,21 +78,6 @@ export const navLinks: INavLinks = {
 
 export const skills: ISkills[] = [
   {
-    id: 'java',
-    name: 'Java',
-    Icon: SiJava
-  },
-  {
-    id: 'swift',
-    name: 'Swift',
-    Icon: SiSwift
-  },
-  {
-    id: 'python',
-    name: 'Python',
-    Icon: SiPython
-  },
-  {
     id: 'c',
     name: 'C',
     Icon: SiC
@@ -100,6 +86,31 @@ export const skills: ISkills[] = [
     id: 'cpp',
     name: 'C++',
     Icon: SiCplusplus
+  },
+  {
+    id: 'python',
+    name: 'Python',
+    Icon: SiPython
+  },
+  {
+    id: 'rust',
+    name: 'Rust',
+    Icon: SiRust
+  },
+  {
+    id: 'go',
+    name: 'Go',
+    Icon: GrGolang
+  },
+  {
+    id: 'python',
+    name: 'Python',
+    Icon: SiPython
+  },
+  {
+    id: 'swift',
+    name: 'Swift',
+    Icon: SiSwift
   },
   {
     id: 'javascript',
@@ -125,11 +136,6 @@ export const skills: ISkills[] = [
     id: 'nextjs',
     name: 'Next.js',
     Icon: SiNextdotjs
-  },
-  {
-    id: 'react-native',
-    name: 'React Native',
-    Icon: FaReact
   },
   {
     id: 'selenium',
@@ -185,11 +191,6 @@ export const skills: ISkills[] = [
     id: 'firebase',
     name: 'Firebase',
     Icon: SiFirebase
-  },
-  {
-    id: 'figma',
-    name: 'Figma',
-    Icon: FiFigma
   }
 ];
 
