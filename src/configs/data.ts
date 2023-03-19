@@ -169,11 +169,6 @@ export const skills: ISkills[] = [
     Icon: GrGraphQl
   },
   {
-    id: 'R',
-    name: 'R',
-    Icon: SiR
-  },
-  {
     id: 'git',
     name: 'Git',
     Icon: FaGitAlt
@@ -199,7 +194,7 @@ export const customSeo: CustomSeoProps = {
   description:
     "hi! my name is mohammad mahfooz. i'm a second year Software Engineering student studying at York University. this is my portfolio, which showcases some of my skills and projects.",
   title: 'mohammad mahfooz',
-  image: '/assets/projects/aboutphoto.jpg',
+  image: '/assets/projects/aboutphoto.png',
   url: 'https://mohammadmahfooz.engineer/',
   twitterUsername: '@mxhammadm'
 };
@@ -216,7 +211,7 @@ export const nextSeo = {
       "hi! my name is mohammad mahfooz. i'm a second year Software Engineering student studying at York University. this is my portfolio, which showcases some of my skills and projects.",
     images: [
       {
-        url: '/assets/projects/aboutphoto.jpg'
+        url: '/assets/projects/aboutphoto.png'
       }
     ],
     site_name: 'mohammad mahfooz'

@@ -40,12 +40,12 @@ const About = () => {
           <Image
             className="about-image"
             // src={zoms}
-            src="/assets/aboutphoto.jpg"
+            src="/assets/aboutphoto.png"
             alt="Photo of Me"
             width={300}
             height={422}
             placeholder="blur"
-            blurDataURL="/assets/aboutphoto.jpg"
+            blurDataURL="/assets/aboutphoto.png"
           />
           <div className="grayscale" />
         </motion.div>
@@ -59,8 +59,8 @@ const About = () => {
             accustomed to before. <br /> <br /> to continue expanding my
             skillset, I am currently learning more about systems programming and
             the linux kernel. i am also working on improving my existing skills
-            by completing personal projects. i&apos;m actively seeking
-            internships for summer 2023.
+            by completing personal projects. i will be joining OTPP as a
+            Software Engineer Intern this upcoming summer and winter.
           </p>
         </motion.div>
         <motion.div

@@ -1,9 +1,9 @@
-import React from "react";
-import { motion } from "framer-motion";
-import useScrollReveal from "../../hooks/useScrollReveal";
-import { parentVar, fadeUp } from "../../configs/animations";
-import { Button } from "../";
-import { StyledContact } from "../../styles/componentStyles";
+import React from 'react';
+import { motion } from 'framer-motion';
+import useScrollReveal from '../../hooks/useScrollReveal';
+import { parentVar, fadeUp } from '../../configs/animations';
+import { Button } from '../';
+import { StyledContact } from '../../styles/componentStyles';
 
 const Contact = () => {
   const [ref, controls] = useScrollReveal(-250);
@@ -20,8 +20,7 @@ const Contact = () => {
         contact
       </motion.h2>
       <motion.p variants={fadeUp} className="contact-p">
-        actively seeking internships for summer 2023. please feel free to
-        contact me.
+        please feel free to contact me-- my inbox is always open!
       </motion.p>
       <motion.div variants={fadeUp}>
         <Button
