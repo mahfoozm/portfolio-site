@@ -1,4 +1,3 @@
-// @ts-ignore
 import dynamic from 'next/dynamic';
 import { customSeo } from '../src/configs/data';
 import {
@@ -13,7 +12,7 @@ import {
 interface IHomeProps {
   isHome: boolean;
 }
-
+// @ts-ignore
 const StarfieldAnimation = dynamic(() => import('react-starfield-animation'), {
   ssr: false
 });
@@ -22,6 +21,7 @@ const Home: React.FC<IHomeProps> = ({ isHome }) => {
   return (
     <>
       <StarfieldAnimation
+        // @ts-ignore
         style={{
           position: 'absolute',
           width: '100%',
