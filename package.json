@@ -1,7 +1,7 @@
 {
-  "homepage": "http://mahfoozm.github.io/",
-  "name": "minimalist-portfolio",
-  "version": "0.1.0",
+  "homepage": "http://mohammadmahfooz.engineer/",
+  "name": "murrfolio",
+  "version": "0.1.2",
   "private": true,
   "scripts": {
     "export": "next export",
