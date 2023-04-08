@@ -14,13 +14,7 @@ import {
   AiOutlineTeam,
   AiFillMessage
 } from 'react-icons/ai';
-import {
-  FiTwitter,
-  FiLinkedin,
-  FiGithub,
-  FiFacebook,
-  FiFigma
-} from 'react-icons/fi';
+import { FiTwitter, FiLinkedin, FiGithub, FiFacebook } from 'react-icons/fi';
 import { GiPlayerTime, GiThink } from 'react-icons/gi';
 import { BsArrowRepeat } from 'react-icons/bs';
 import { IoLogoLinkedin } from 'react-icons/io';
@@ -34,19 +28,18 @@ import {
   SiCplusplus,
   SiJavascript,
   SiTypescript,
-  SiTailwindcss,
-  SiFirebase,
   SiFlask,
-  SiVite,
-  SiJest,
   SiSelenium,
   SiMysql,
-  SiR,
   SiMongodb,
-  SiStyledcomponents,
   SiRedux,
   SiNextdotjs,
-  SiGoland
+  SiGoland,
+  SiKubernetes,
+  SiFastapi,
+  SiLinux,
+  SiPytorch,
+  SiGnubash
 } from 'react-icons/si';
 import {
   FaReact,
@@ -56,8 +49,7 @@ import {
   FaFistRaised,
   FaHandHoldingHeart,
   FaPuzzlePiece,
-  FaDocker,
-  FaHtml5
+  FaDocker
 } from 'react-icons/fa';
 
 export const navLinks: INavLinks = {
@@ -94,6 +86,11 @@ export const skills: ISkills[] = [
     Icon: SiPython
   },
   {
+    id: 'java',
+    name: 'Java',
+    Icon: SiJava
+  },
+  {
     id: 'rust',
     name: 'Rust',
     Icon: SiRust
@@ -104,14 +101,24 @@ export const skills: ISkills[] = [
     Icon: SiGoland
   },
   {
-    id: 'python',
-    name: 'Python',
-    Icon: SiPython
-  },
-  {
     id: 'swift',
     name: 'Swift',
     Icon: SiSwift
+  },
+  {
+    id: 'bash',
+    name: 'Bash',
+    Icon: SiGnubash
+  },
+  {
+    id: 'linux',
+    name: 'Linux',
+    Icon: SiLinux
+  },
+  {
+    id: 'pytorch',
+    name: 'PyTorch',
+    Icon: SiPytorch
   },
   {
     id: 'javascript',
@@ -144,16 +151,6 @@ export const skills: ISkills[] = [
     Icon: SiSelenium
   },
   {
-    id: 'tailwindcss',
-    name: 'Tailwind CSS',
-    Icon: SiTailwindcss
-  },
-  {
-    id: 'html5',
-    name: 'HTML5',
-    Icon: FaHtml5
-  },
-  {
     id: 'mongodb',
     name: 'MongoDB',
     Icon: SiMongodb
@@ -179,14 +176,19 @@ export const skills: ISkills[] = [
     Icon: FaDocker
   },
   {
+    id: 'kubernetes',
+    name: 'Kubernetes',
+    Icon: SiKubernetes
+  },
+  {
+    id: 'fastapi',
+    name: 'FastAPI',
+    Icon: SiFastapi
+  },
+  {
     id: 'flask',
     name: 'Flask',
     Icon: SiFlask
-  },
-  {
-    id: 'firebase',
-    name: 'Firebase',
-    Icon: SiFirebase
   }
 ];
 
