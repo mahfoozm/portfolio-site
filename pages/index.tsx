@@ -20,16 +20,15 @@ const StarfieldAnimation = dynamic(() => import('react-starfield-animation'), {
 const Home: React.FC<IHomeProps> = ({ isHome }) => {
   return (
     <>
+      <PageHead seo={{ ...customSeo }} />
       <StarfieldAnimation
         // @ts-ignore
         style={{
           position: 'absolute',
-          width: '100%',
-          height: '100%',
-          zIndex: -1
+          width: '94%',
+          height: '100%'
         }}
       />
-      <PageHead seo={{ ...customSeo }} />
       <Layout isHome={isHome}>
         <Hero />
         <About />
