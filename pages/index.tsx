@@ -38,7 +38,8 @@ const Home: React.FC<IHomeProps> = ({ isHome }) => {
             width: '100%',
             height: '100%'
           }}
-          numParticles={400}
+          numParticles={600}
+          lineWidth={2.0}
           depth={500}
         />
         <div
