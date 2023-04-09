@@ -1,18 +1,18 @@
-import React, { useEffect, useState } from "react";
-import Link from "next/link";
-import { motion, Variants } from "framer-motion";
+import React, { useEffect, useState } from 'react';
+import Link from 'next/link';
+import { motion, Variants } from 'framer-motion';
 
-import ToggleTheme from "./ToggleTheme";
-import { navLinks } from "../configs/data";
-import { StyledNav, StyledLinks } from "../styles/componentStyles";
-import { NavLinksProps } from "@/configs/types";
+import ToggleTheme from './ToggleTheme';
+import { navLinks } from '../configs/data';
+import { StyledNav, StyledLinks } from '../styles/componentStyles';
+import { NavLinksProps } from '@/configs/types';
 
 interface INavProps {
   isHome: boolean;
 }
 
 const Nav: React.FC<INavProps> = ({ isHome }) => {
-  const [hostURL, setHostURL] = useState<string>("");
+  const [hostURL, setHostURL] = useState<string>('');
   const [prevScrollPos, setPrevScrollPos] = useState<number>(1);
   const [curScrollPos, setCurScrollPos] = useState<number>(0);
 
@@ -25,7 +25,6 @@ const Nav: React.FC<INavProps> = ({ isHome }) => {
     };
   }, [curScrollPos]);
 
-  //? ANIMATIONS
   const navVariants: Variants = {
     hidden: { opacity: isHome ? 0 : 1 },
     visible: {
@@ -33,24 +32,24 @@ const Nav: React.FC<INavProps> = ({ isHome }) => {
       transition: {
         delay: 0.1,
         staggerChildren: 0.1,
-        when: "beforeChildren",
-      },
-    },
+        when: 'beforeChildren'
+      }
+    }
   };
 
   const navItemVariants: Variants = {
     hidden: {
       y: isHome ? -20 : 0,
-      opacity: isHome ? 0 : 1,
+      opacity: isHome ? 0 : 1
     },
     visible: {
       y: 0,
       opacity: 1,
       transition: {
-        ease: "easeInOut",
-        duration: 0.2,
-      },
-    },
+        ease: 'easeInOut',
+        duration: 0.2
+      }
+    }
   };
 
   useEffect(() => {
@@ -60,7 +59,7 @@ const Nav: React.FC<INavProps> = ({ isHome }) => {
   const Logo = () =>
     isHome ? <a href={hostURL}></a> : <Link href="/" passHref></Link>;
 
-  const [innerText, setInnerText] = useState("");
+  const [innerText, setInnerText] = useState('');
 
   const activeLinkHandler = (e: React.MouseEvent<HTMLLIElement>): void => {
     const input = e.target as HTMLElement;
@@ -96,7 +95,7 @@ const Nav: React.FC<INavProps> = ({ isHome }) => {
                     href={url}
                     passHref
                     className={`link ${
-                      name === innerText ? "active-link" : ""
+                      name === innerText ? 'active-link' : ''
                     }`}
                   >
                     {name}

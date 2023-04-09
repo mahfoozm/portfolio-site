@@ -21,20 +21,42 @@ const Home: React.FC<IHomeProps> = ({ isHome }) => {
   return (
     <>
       <PageHead seo={{ ...customSeo }} />
-      <StarfieldAnimation
-        // @ts-ignore
+      <div
         style={{
-          position: 'absolute',
-          width: '94%',
-          height: '100%'
+          position: 'relative',
+          width: '100%',
+          height: '100%',
+          overflow: 'hidden'
         }}
-      />
-      <Layout isHome={isHome}>
-        <Hero />
-        <About />
-        <Projects />
-        <Contact />
-      </Layout>
+      >
+        <StarfieldAnimation
+          // @ts-ignore
+          style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%'
+          }}
+          numParticles={400}
+          depth={500}
+        />
+        <div
+          style={{
+            position: 'relative',
+            zIndex: 1,
+            width: '100%',
+            height: '100%'
+          }}
+        >
+          <Layout isHome={isHome}>
+            <Hero />
+            <About />
+            <Projects />
+            <Contact />
+          </Layout>
+        </div>
+      </div>
     </>
   );
 };
