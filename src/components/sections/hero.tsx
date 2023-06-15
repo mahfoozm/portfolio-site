@@ -1,19 +1,19 @@
-import React from "react";
-import { motion } from "framer-motion";
-import { fadeUp } from "../../configs/animations";
-import { Button } from "../index";
+import React from 'react';
+import { motion } from 'framer-motion';
+import { fadeUp } from '../../configs/animations';
+import { Button } from '../index';
 import {
   StyledHero,
   StyledHeroContainer,
-  StyledHeroContent,
-} from "../../styles/componentStyles";
+  StyledHeroContent
+} from '../../styles/componentStyles';
 
 const Hero = () => {
   const one = <h1>hi, my name is</h1>;
   const two = <h2>Mohammad Mahfooz.</h2>;
   const three = (
     <h3>
-      i&apos;m a second year Software Engineering student studying at York
+      i&apos;m a third year Software Engineering student studying at York
       University.
     </h3>
   );
@@ -21,16 +21,16 @@ const Hero = () => {
 
   const heroContainerVariants = {
     hidden: {
-      opacity: 0,
+      opacity: 0
     },
     visible: {
       opacity: 1,
       transition: {
         delay: 1,
         staggerChildren: 0.2,
-        when: "beforeChildren",
-      },
-    },
+        when: 'beforeChildren'
+      }
+    }
   };
 
   return (

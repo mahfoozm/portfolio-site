@@ -194,7 +194,7 @@ export const skills: ISkills[] = [
 
 export const customSeo: CustomSeoProps = {
   description:
-    "hi! my name is mohammad mahfooz. i'm a second year Software Engineering student studying at York University. this is my portfolio, which showcases some of my skills and projects.",
+    "hi! my name is mohammad mahfooz. i'm a third year Software Engineering student studying at York University. this is my portfolio, which showcases some of my skills and projects.",
   title: 'mohammad mahfooz',
   image: '/assets/projects/aboutphoto.png',
   url: 'https://mohammadmahfooz.engineer/',
@@ -204,13 +204,13 @@ export const customSeo: CustomSeoProps = {
 export const nextSeo = {
   title: 'mohammad mahfooz',
   description:
-    "hi! my name is mohammad mahfooz. i'm a second year Software Engineering student studying at York University. this is my portfolio, which showcases some of my skills and projects.",
+    "hi! my name is mohammad mahfooz. i'm a third year Software Engineering student studying at York University. this is my portfolio, which showcases some of my skills and projects.",
   canonical: 'https://mohammadmahfooz.engineer/',
   openGraph: {
     url: 'https://mohammadmahfooz.engineer/',
     title: 'Mohammad Mahfooz',
     description:
-      "hi! my name is mohammad mahfooz. i'm a second year Software Engineering student studying at York University. this is my portfolio, which showcases some of my skills and projects.",
+      "hi! my name is mohammad mahfooz. i'm a third year Software Engineering student studying at York University. this is my portfolio, which showcases some of my skills and projects.",
     images: [
       {
         url: '/assets/projects/aboutphoto.png'
