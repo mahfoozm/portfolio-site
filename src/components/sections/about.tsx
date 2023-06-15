@@ -52,15 +52,13 @@ const About = () => {
         <motion.div variants={fadeLeft} className="about-text">
           <h3>Mohammad Mahfooz</h3>
           <p>
-            <br />i recently wrapped up my first internship as a Software
-            Engineer at YURide (a transportation startup at York University).
-            the most valuable skill I gained from this internship was (easily)
-            the ability to work on a project as a team, something I wasn&apos;t
-            accustomed to before. <br /> <br /> to continue expanding my
-            skillset, I am currently learning more about systems programming and
-            the linux kernel. i am also working on improving my existing skills
-            by completing personal projects. i will be joining OTPP as a
-            Software Engineer Intern this upcoming summer and winter.
+            <br />i love systems programming and anything low-level. also enjoy
+            ML work-- been playing around with tuning OSS LLMs like LLaMA and
+            Falcon (13b). <br />
+            <br />
+            currently working at OTPP as a Software Engineer Intern for two
+            terms (until dec 2023). looking for winter/summer 24&lsquo;
+            opportunities.
           </p>
         </motion.div>
         <motion.div
