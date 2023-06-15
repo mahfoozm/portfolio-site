@@ -230,7 +230,7 @@ export const projects: IProjects[] = [
     name: 'YorkURMP',
     image: '/assets/projects/stanislawgoat.png',
     alt: 'YorkU RMP',
-    info: 'a browser extension that displays professor ws from RateMyProfessors.com on the YorkU course search portal.',
+    info: 'a browser extension that displays professors from RateMyProfessors.com on the YorkU course search portal.',
     techs: ['JavaScript', 'HTML', 'GraphQL', 'Node.js'],
     links: {
       github: 'https://github.com/mahfoozm/YorkURMP'
@@ -270,7 +270,7 @@ export const projects: IProjects[] = [
     name: 'Air Quality Monitor',
     image: '/assets/projects/airqualitymonitor.png',
     alt: 'Air Quality Monitor',
-    info: 'a CO2 monitor/weather station utilizing Java and an Arduino.',
+    info: 'a CO2 monitor/weather station using Java and an Arduino.',
     techs: ['Java', 'C++', 'Firmata', 'JavaFX', 'jSerialComm'],
     links: {
       github: 'https://github.com/mahfoozm/airqualitymonitor'
@@ -280,7 +280,7 @@ export const projects: IProjects[] = [
     name: 'Plant Watering System',
     image: '/assets/projects/autowater.png',
     alt: 'Plant Watering System',
-    info: 'an automated plant watering system utilizing Java and an Arduino.',
+    info: 'an automated plant watering system using Java and an Arduino.',
     techs: ['Java', 'Firmata', 'JUnit'],
     links: {
       github: 'https://github.com/mahfoozm/plantwateringsystem'
