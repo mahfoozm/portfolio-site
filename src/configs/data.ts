@@ -197,7 +197,7 @@ export const customSeo: CustomSeoProps = {
     "hi! my name is mohammad mahfooz. i'm a third year Software Engineering student studying at York University. this is my portfolio, which showcases some of my skills and projects.",
   title: 'mohammad mahfooz',
   image: '/assets/projects/aboutphoto.png',
-  url: 'https://mohammadmahfooz.engineer/',
+  url: 'https://mahfooz.tech/',
   twitterUsername: '@mxhammadm'
 };
 
@@ -205,9 +205,9 @@ export const nextSeo = {
   title: 'mohammad mahfooz',
   description:
     "hi! my name is mohammad mahfooz. i'm a third year Software Engineering student studying at York University. this is my portfolio, which showcases some of my skills and projects.",
-  canonical: 'https://mohammadmahfooz.engineer/',
+  canonical: 'https://mahfooz.tech/',
   openGraph: {
-    url: 'https://mohammadmahfooz.engineer/',
+    url: 'https://mahfooz.tech/',
     title: 'Mohammad Mahfooz',
     description:
       "hi! my name is mohammad mahfooz. i'm a third year Software Engineering student studying at York University. this is my portfolio, which showcases some of my skills and projects.",
@@ -220,7 +220,7 @@ export const nextSeo = {
   },
   twitter: {
     handle: '@mxhammadm',
-    site: 'https://mohammadmahfooz.engineer/',
+    site: 'https://mahfooz.tech/',
     cardType: 'summary_large_image'
   }
 };

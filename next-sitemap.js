@@ -1,5 +1,5 @@
-const siteUrl = 'https://mohammadmahfooz.engineer';
+const siteUrl = 'https://mahfooz.tech/';
 
 module.exports = {
-  siteUrl,
+  siteUrl
 };

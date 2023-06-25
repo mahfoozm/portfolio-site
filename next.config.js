@@ -1,30 +1,30 @@
-const isProd = process.env.NODE_ENV === "production";
+const isProd = process.env.NODE_ENV === 'production';
 
 module.exports = {
-  assetPrefix: isProd ? "/your-github-repo-name/" : "",
+  assetPrefix: isProd ? '/your-github-repo-name/' : '',
   images: {
-    unoptimized: true,
+    unoptimized: true
   },
-  reactStrictMode: true,
+  reactStrictMode: true
 };
 
-const withPlugins = require("next-compose-plugins");
-const withPWA = require("next-pwa");
+const withPlugins = require('next-compose-plugins');
+const withPWA = require('next-pwa');
 
 const pwaConfig = {
   pwa: {
-    dest: "public",
-  },
+    dest: 'public'
+  }
 };
 
 const nextConfig = {
   compiler: {
-    styledComponents: true,
+    styledComponents: true
   },
   swcMinify: true,
   images: {
-    domains: ["mohammadmahfooz.engineer", "raw.githubusercontent.com"],
-  },
+    domains: ['mahfooz.tech', 'raw.githubusercontent.com']
+  }
 };
 
 module.exports = withPlugins([[withPWA, pwaConfig]], nextConfig);

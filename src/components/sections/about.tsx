@@ -52,9 +52,12 @@ const About = () => {
         <motion.div variants={fadeLeft} className="about-text">
           <h3>Mohammad Mahfooz</h3>
           <p>
-            <br />i love systems programming and anything low-level. also enjoy
-            ML work-- been playing around with tuning OSS LLMs like LLaMA and
-            Falcon (13b). <br />
+            <br />i love systems programming and anything low-level. interested
+            in a broad range of fields in technology-- everything from compiler
+            design to ML (been playing around with tuning OSS LLMs like LLaMA
+            and Falcon recently). passionate towards systems dev & back end web
+            dev.
+            <br />
             <br />
             currently working at OTPP as a Software Engineer Intern for two
             terms (until dec 2023). looking for winter/summer 24&lsquo;
