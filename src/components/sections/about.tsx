@@ -54,9 +54,9 @@ const About = () => {
           <p>
             <br />i love systems programming and anything low-level. interested
             in a broad range of fields in technology-- everything from compiler
-            design to ML (been playing around with tuning OSS LLMs like LLaMA
-            and Falcon recently). passionate towards systems dev & back end web
-            dev.
+            design to ML (been playing around with fine-tuning OSS LLMs like
+            LLaMA and Falcon recently). passionate towards systems dev & back
+            end web dev.
             <br />
             <br />
             currently working at OTPP as a Software Engineer Intern for two
