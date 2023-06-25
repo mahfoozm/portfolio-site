@@ -59,9 +59,9 @@ const About = () => {
             end web dev.
             <br />
             <br />
-            currently working at OTPP as a Software Engineer Intern for two
-            terms (until dec 2023). looking for winter/summer 24&lsquo;
-            opportunities.
+            currently working at OTPP as a Software Engineer Intern for both
+            summer and fall terms (until dec 2023). looking for winter/summer
+            24&lsquo; opportunities.
           </p>
         </motion.div>
         <motion.div
