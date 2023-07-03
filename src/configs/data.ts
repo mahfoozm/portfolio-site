@@ -21,7 +21,7 @@ import { IoLogoLinkedin } from 'react-icons/io';
 import { GrGolang, GrGraphQl, GrMysql } from 'react-icons/gr';
 import {
   SiJava,
-  SiSwift,
+  SiCsharp,
   SiPython,
   SiRust,
   SiC,
@@ -29,7 +29,6 @@ import {
   SiJavascript,
   SiTypescript,
   SiFlask,
-  SiSelenium,
   SiMysql,
   SiMongodb,
   SiRedux,
@@ -39,7 +38,8 @@ import {
   SiFastapi,
   SiLinux,
   SiPytorch,
-  SiGnubash
+  SiGnubash,
+  SiRedis
 } from 'react-icons/si';
 import {
   FaReact,
@@ -49,7 +49,8 @@ import {
   FaFistRaised,
   FaHandHoldingHeart,
   FaPuzzlePiece,
-  FaDocker
+  FaDocker,
+  FaSnowflake
 } from 'react-icons/fa';
 
 export const navLinks: INavLinks = {
@@ -101,9 +102,9 @@ export const skills: ISkills[] = [
     Icon: SiGoland
   },
   {
-    id: 'swift',
-    name: 'Swift',
-    Icon: SiSwift
+    id: 'C#',
+    name: 'C#',
+    Icon: SiCsharp
   },
   {
     id: 'bash',
@@ -146,9 +147,14 @@ export const skills: ISkills[] = [
     Icon: SiNextdotjs
   },
   {
-    id: 'selenium',
-    name: 'Selenium',
-    Icon: SiSelenium
+    id: 'redis',
+    name: 'Redis',
+    Icon: SiRedis
+  },
+  {
+    id: 'snowflake',
+    name: 'Snowflake',
+    Icon: FaSnowflake
   },
   {
     id: 'mongodb',
@@ -241,7 +247,7 @@ export const projects: IProjects[] = [
     image: '/assets/projects/covergpt.png',
     alt: 'CoverGPT',
     info: 'a program that uses AI to generate a personalized and formatted cover letter given a job posting and a resume.',
-    techs: ['Python', 'TKinter', 'LaTeX', 'ChatGPT'],
+    techs: ['Python', 'TKinter', 'LaTeX', 'GPT-3.5'],
     links: {
       github: 'https://github.com/mahfoozm/CoverGPT'
     }
