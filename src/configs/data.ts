@@ -233,13 +233,13 @@ export const nextSeo = {
 
 export const projects: IProjects[] = [
   {
-    name: 'YorkURMP',
-    image: '/assets/projects/stanislawgoat.png',
-    alt: 'YorkU RMP',
-    info: 'a browser extension that displays professors from RateMyProfessors.com on the YorkU course search portal.',
-    techs: ['JavaScript', 'HTML', 'GraphQL', 'Node.js'],
+    name: 'Cobra',
+    image: '/assets/projects/llvmir.png',
+    alt: 'Cobra',
+    info: 'a robust statically typed programming language with a python-like syntax. LLVM frontend implemented in Rust.',
+    techs: ['Rust', 'LLVM', 'Cargo'],
     links: {
-      github: 'https://github.com/mahfoozm/YorkURMP'
+      github: 'https://github.com/mahfoozm/cobra-lang'
     }
   },
   {
@@ -247,9 +247,19 @@ export const projects: IProjects[] = [
     image: '/assets/projects/covergpt.png',
     alt: 'CoverGPT',
     info: 'a program that uses AI to generate a personalized and formatted cover letter given a job posting and a resume.',
-    techs: ['Python', 'TKinter', 'LaTeX', 'GPT-3.5'],
+    techs: ['Python', 'LaTeX', 'GPT-3.5'],
     links: {
       github: 'https://github.com/mahfoozm/CoverGPT'
+    }
+  },
+  {
+    name: 'YorkURMP',
+    image: '/assets/projects/stanislawgoat.png',
+    alt: 'YorkU RMP',
+    info: 'a browser extension that displays professor info from RateMyProfessors on the YorkU course portal and VSB.',
+    techs: ['JavaScript', 'Node.js', 'GraphQL'],
+    links: {
+      github: 'https://github.com/mahfoozm/YorkURMP'
     }
   },
   {
@@ -257,19 +267,9 @@ export const projects: IProjects[] = [
     image: '/assets/projects/sitewelcome.png',
     alt: 'Portfolio Site',
     info: "my portfolio site (which you're currently on!). designed to showcase my skills and projects.",
-    techs: ['TypeScript', 'React', 'Next.js', 'Styled Components', 'Node.js'],
+    techs: ['TypeScript', 'Node.js', 'Next.js', 'React', 'Styled Components'],
     links: {
       github: 'https://github.com/mahfoozm/portfolio-site'
-    }
-  },
-  {
-    name: 'CUPEBot',
-    image: '/assets/projects/cupebot.png',
-    alt: 'CUPEBot',
-    info: 'a discord bot that monitors EECS CUPE TA postings, and sends a discord message when a specified posting is added.',
-    techs: ['Python', 'Beautiful Soup', 'discord.py'],
-    links: {
-      github: 'https://github.com/mahfoozm/cupe-jobs-monitor'
     }
   },
   {
@@ -283,13 +283,13 @@ export const projects: IProjects[] = [
     }
   },
   {
-    name: 'Plant Watering System',
-    image: '/assets/projects/autowater.png',
-    alt: 'Plant Watering System',
-    info: 'an automated plant watering system using Java and an Arduino.',
-    techs: ['Java', 'Firmata', 'JUnit'],
+    name: 'CUPEBot',
+    image: '/assets/projects/cupebot.png',
+    alt: 'CUPEBot',
+    info: 'a discord bot that monitors EECS CUPE TA postings, and sends a discord message when new postings are added.',
+    techs: ['Python', 'Beautiful Soup', 'discord.py'],
     links: {
-      github: 'https://github.com/mahfoozm/plantwateringsystem'
+      github: 'https://github.com/mahfoozm/cupe-jobs-monitor'
     }
   }
 ];
