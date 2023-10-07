@@ -47,7 +47,7 @@ const About = () => {
             placeholder="blur"
             blurDataURL="/assets/aboutphoto.png"
           />
-          <div className="grayscale" />
+          <div />
         </motion.div>
         <motion.div variants={fadeLeft} className="about-text">
           <h3>Mohammad Mahfooz</h3>
@@ -80,7 +80,7 @@ const About = () => {
             placeholder="blur"
             blurDataURL="/assets/aboutphoto-square.jpg"
           />
-          <div className="grayscale" />
+          <div />
         </motion.div>
       </StyledAboutContent>
       <TechStacks />

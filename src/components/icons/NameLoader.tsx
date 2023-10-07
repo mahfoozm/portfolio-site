@@ -1,55 +1,65 @@
 // @ts-nocheck
-import React from "react";
-import { motion } from "framer-motion";
-import { useTheme } from "styled-components";
-import useTabActive from "@/hooks/useTabActive";
+import React, { useEffect } from 'react';
+import { motion } from 'framer-motion';
+import { useTheme } from 'styled-components';
+import useTabActive from '@/hooks/useTabActive';
 
-const svgVariants = {
-  initial: {
-    opacity: 0,
-  },
-  animate: {
-    opacity: 1,
-    transition: {
-      duration: 1,
-    },
-  },
-};
+// const svgVariants = {
+//   initial: {
+//     opacity: 0,
+//   },
+//   animate: {
+//     opacity: 1,
+//     transition: {
+//       duration: 1,
+//     },
+//   },
+// };
 
-const pathVariants = {
-  initial: {
-    opacity: 0,
-    pathLength: 0,
-  },
-  animate: {
-    opacity: 1,
-    pathLength: 1,
-    transition: {
-      duration: 2.5,
-      ease: "easeInOut",
-    },
-  },
-};
+// const pathVariants = {
+//   initial: {
+//     opacity: 0,
+//     pathLength: 0,
+//   },
+//   animate: {
+//     opacity: 1,
+//     pathLength: 1,
+//     transition: {
+//       duration: 2.5,
+//       ease: "easeInOut",
+//     },
+//   },
+// };
 
 const NameLoader = ({ finishLoading }) => {
   const theme = useTheme();
   const isTabActive = useTabActive();
 
+  useEffect(() => {
+    if (isTabActive) {
+      finishLoading();
+    }
+  }, [isTabActive, finishLoading]);
+
+  if (isTabActive) {
+    return null;
+  }
+
   return (
     <motion.svg
-      initial={isTabActive ? "initial" : false}
-      animate={isTabActive ? "animate" : false}
-      onAnimationComplete={finishLoading}
+      // initial={isTabActive ? "initial" : false}
+      // animate={isTabActive ? "animate" : false}
+      // onAnimationComplete={finishLoading}
       className="Loader"
       width="1265"
       height="125"
       viewBox="0 0 1265 125"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      variants={svgVariants}
-      exit="exit"
+      // variants={svgVariants}
+      // exit="exit"
     >
-      <motion.path
+      {/* <motion.path
         d="M 6.4 97.92 L 0 97.92 L 0 4.48 L 6.4 4.48 L 6.4 23.68 L 6.4 37.76 L 9.344 37.76 L 5.504 45.44 Q 5.504 36.736 11.136 31.488 Q 16.768 26.24 25.984 26.24 Q 36.352 26.24 42.624 32.896 A 22.289 22.289 0 0 1 48.068 43.292 Q 48.883 46.751 48.896 50.815 A 41.254 41.254 0 0 1 48.896 50.944 L 48.896 97.92 L 42.496 97.92 L 42.496 51.84 Q 42.496 44.531 39.637 39.698 A 16.331 16.331 0 0 0 37.696 37.056 A 15.828 15.828 0 0 0 27.775 31.947 A 22.488 22.488 0 0 0 24.704 31.744 Q 16.256 31.744 11.328 37.12 A 17.959 17.959 0 0 0 7.215 44.896 Q 6.4 48.04 6.4 51.84 L 6.4 97.92 Z M 131.2 97.92 L 74.88 97.92 L 74.88 92.16 L 100.608 92.16 L 100.608 33.28 L 78.08 33.28 L 78.08 27.52 L 107.008 27.52 L 107.008 92.16 L 131.2 92.16 L 131.2 97.92 Z M 168.96 118.4 L 163.84 118.4 L 173.44 78.592 L 184.96 78.592 L 168.96 118.4 Z M 100.657 13.793 A 9.379 9.379 0 0 0 103.04 14.08 A 9.881 9.881 0 0 0 104.817 13.927 A 6.966 6.966 0 0 0 108.416 12.16 A 6.21 6.21 0 0 0 110.152 9.344 A 8.086 8.086 0 0 0 110.464 7.04 Q 110.464 3.84 108.416 1.92 A 6.832 6.832 0 0 0 105.423 0.287 A 9.379 9.379 0 0 0 103.04 0 A 9.881 9.881 0 0 0 101.263 0.153 A 6.966 6.966 0 0 0 97.664 1.92 A 6.21 6.21 0 0 0 95.928 4.736 A 8.086 8.086 0 0 0 95.616 7.04 Q 95.616 10.24 97.664 12.16 A 6.832 6.832 0 0 0 100.657 13.793 Z"
         stroke={theme.accentMain}
         strokeWidth="3"
@@ -72,7 +82,7 @@ const NameLoader = ({ finishLoading }) => {
         stroke={theme.accentMain}
         strokeWidth="3"
         variants={pathVariants}
-      />
+      /> */}
     </motion.svg>
   );
 };
