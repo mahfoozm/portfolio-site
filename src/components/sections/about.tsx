@@ -52,10 +52,10 @@ const About = () => {
         <motion.div variants={fadeLeft} className="about-text">
           <h3>Mohammad Mahfooz</h3>
           <p>
-            <br />i love systems programming and as little abstraction as possible. interested
+            <br />i love hands on systems programming and as little abstraction as possible. interested
             in a broad range of fields in technology-- everything from compiler
-            work to driver development. passionate towards systems dev & back
-            end web dev.
+            work to back end infrastructure. passionate towards systems dev, back
+            end web dev, and platform work.
             <br />
             <br />
             just wrapped up an 8 month work term at OTPP as a Software Engineer Intern. joining canada life for winter &lsquo;24. 
