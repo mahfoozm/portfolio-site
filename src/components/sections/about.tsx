@@ -58,8 +58,8 @@ const About = () => {
             end web dev, and platform work.
             <br />
             <br />
-            just wrapped up an 8 month work term at OTPP as a Software Engineer Intern. joining canada life for winter &lsquo;24. 
-            looking for summer &lsquo;24 opportunities.
+            just wrapped up an 8 month work term at OTPP as a Software Engineer Intern. joining canada life for winter &lsquo;24, and NVIDIA
+            for summer &lsquo;24.
           </p>
         </motion.div>
         <motion.div
