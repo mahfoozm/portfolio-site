@@ -123,12 +123,12 @@ export const skills: ISkills[] = [
   },
   {
     id: 'javascript',
-    name: 'Javascript',
+    name: 'JavaScript',
     Icon: SiJavascript
   },
   {
     id: 'typescript',
-    name: 'Typescript',
+    name: 'TypeScript',
     Icon: SiTypescript
   },
   {
