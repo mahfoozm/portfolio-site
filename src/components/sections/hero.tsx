@@ -13,7 +13,7 @@ const Hero = () => {
   const two = <h2>Mohammad Mahfooz.</h2>;
   const three = (
     <h3>
-      i&apos;m a third year Software Engineering student studying at York
+      i&apos;m a fourth year Software Engineering student studying at York
       University.
     </h3>
   );

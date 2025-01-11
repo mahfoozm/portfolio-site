@@ -20,7 +20,7 @@ const Contact = () => {
         contact
       </motion.h2>
       <motion.p variants={fadeUp} className="contact-p">
-        please feel free to contact me-- my inbox is always open!
+        not actively seeking new positions, but please feel free to contact me!
       </motion.p>
       <motion.div variants={fadeUp}>
         <Button

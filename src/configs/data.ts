@@ -117,11 +117,6 @@ export const skills: ISkills[] = [
     Icon: SiLinux
   },
   {
-    id: 'pytorch',
-    name: 'PyTorch',
-    Icon: SiPytorch
-  },
-  {
     id: 'javascript',
     name: 'JavaScript',
     Icon: SiJavascript
@@ -132,29 +127,9 @@ export const skills: ISkills[] = [
     Icon: SiTypescript
   },
   {
-    id: 'nodejs',
-    name: 'Node.js',
-    Icon: FaNodeJs
-  },
-  {
-    id: 'reactjs',
-    name: 'React',
-    Icon: FaReact
-  },
-  {
-    id: 'nextjs',
-    name: 'Next.js',
-    Icon: SiNextdotjs
-  },
-  {
     id: 'redis',
     name: 'Redis',
     Icon: SiRedis
-  },
-  {
-    id: 'snowflake',
-    name: 'Snowflake',
-    Icon: FaSnowflake
   },
   {
     id: 'mongodb',
@@ -200,7 +175,7 @@ export const skills: ISkills[] = [
 
 export const customSeo: CustomSeoProps = {
   description:
-    "hi! my name is mohammad mahfooz. i'm a third year Software Engineering student studying at York University. this is my portfolio, which showcases some of my skills and projects.",
+    "hi! my name is mohammad mahfooz. i'm a fourth year Software Engineering student studying at York University. this is my portfolio, which showcases some of my skills and projects.",
   title: 'mohammad mahfooz',
   image: '/assets/projects/aboutphoto.png',
   url: 'https://mahfooz.tech/',
@@ -210,13 +185,13 @@ export const customSeo: CustomSeoProps = {
 export const nextSeo = {
   title: 'mohammad mahfooz',
   description:
-    "hi! my name is mohammad mahfooz. i'm a third year Software Engineering student studying at York University. this is my portfolio, which showcases some of my skills and projects.",
+    "hi! my name is mohammad mahfooz. i'm a fourth year Software Engineering student studying at York University. this is my portfolio, which showcases some of my skills and projects.",
   canonical: 'https://mahfooz.tech/',
   openGraph: {
     url: 'https://mahfooz.tech/',
     title: 'Mohammad Mahfooz',
     description:
-      "hi! my name is mohammad mahfooz. i'm a third year Software Engineering student studying at York University. this is my portfolio, which showcases some of my skills and projects.",
+      "hi! my name is mohammad mahfooz. i'm a fourth year Software Engineering student studying at York University. this is my portfolio, which showcases some of my skills and projects.",
     images: [
       {
         url: '/assets/projects/aboutphoto.png'
@@ -246,8 +221,8 @@ export const projects: IProjects[] = [
     name: 'CoverGPT',
     image: '/assets/projects/covergpt.png',
     alt: 'CoverGPT',
-    info: 'a program that uses AI to generate a personalized and formatted cover letter given a job posting and a resume.',
-    techs: ['Python', 'LaTeX', 'GPT-3.5'],
+    info: 'a program that uses LLMs to generate a personalized and formatted cover letter given a job posting and a resume.',
+    techs: ['Python', 'LaTeX'],
     links: {
       github: 'https://github.com/mahfoozm/CoverGPT'
     }
@@ -287,7 +262,7 @@ export const projects: IProjects[] = [
     image: '/assets/projects/cupebot.png',
     alt: 'CUPEBot',
     info: 'a discord bot that monitors EECS CUPE TA postings, and sends a discord message when new postings are added.',
-    techs: ['Python', 'Beautiful Soup', 'discord.py'],
+    techs: ['Python', 'Beautiful Soup'],
     links: {
       github: 'https://github.com/mahfoozm/cupe-jobs-monitor'
     }

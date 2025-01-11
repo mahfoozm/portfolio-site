@@ -52,14 +52,13 @@ const About = () => {
         <motion.div variants={fadeLeft} className="about-text">
           <h3>Mohammad Mahfooz</h3>
           <p>
-            <br />i love hands on systems programming and as little abstraction as possible. interested
-            in a broad range of fields in technology-- everything from compiler
-            work to back end infrastructure. passionate towards systems dev, back
-            end web dev, and platform work.
+            <br />i love hands on systems programming and as little abstraction
+            as possible. interested in a broad range of fields-- everything from
+            kernel work to back end infrastructure.
             <br />
             <br />
-            just wrapped up an 8 month work term at OTPP as a Software Engineer Intern. joining canada life for winter &lsquo;24, and NVIDIA
-            for summer &lsquo;24.
+            returning to my team at NVIDIA as a full-time software engineer in
+            summer 2025.
           </p>
         </motion.div>
         <motion.div
